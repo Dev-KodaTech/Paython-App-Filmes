@@ -1,0 +1,251 @@
+{% extends "base.html" %}
+
+{% block title %}Sobre o Projeto{% endblock %}
+
+{% block content %}
+
+<!-- Sobre o Projeto -->
+<div class="row py-5 mb-4">
+  <div class="col-lg-10 offset-lg-1">
+    <div class="card border-0 shadow-sm">
+      <div class="card-body p-5">
+        <h2 class="text-primary mb-4">Sobre o Projeto</h2>
+        <p class="fs-5 mb-4">
+          O <strong>APPFILMES</strong> é um projeto full-stack desenvolvido para fornecer uma plataforma completa de gerenciamento e exploração de conteúdo cinematográfico. 
+          A aplicação foi construída utilizando <strong>Python</strong> e o framework web <strong>Flask</strong>, oferecendo uma API RESTful robusta para consulta de informações sobre filmes e séries.
+        </p>
+        <p class="fs-5 mb-4">
+          O projeto integra uma interface web moderna com uma arquitetura de backend escalável, permitindo aos usuários visualizar catálogos, 
+          realizar buscas avançadas, avaliar produções e interagir com outros cinéfilos através de comentários e avaliações.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Tecnologias Utilizadas -->
+<div class="row py-5 bg-light rounded mb-4">
+  <div class="col-lg-10 offset-lg-1">
+    <h3 class="text-center mb-5">Tecnologias Utilizadas</h3>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body text-center p-4">
+            <div class="mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="#3776ab" class="bi bi-file-earmark-code" viewBox="0 0 16 16">
+                <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"/>
+                <path d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9.5 8.646 7.854a.5.5 0 0 1 0-.708m-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9.5l1.647-1.646a.5.5 0 0 0 0-.708z"/>
+              </svg>
+            </div>
+            <h5 class="card-title text-primary">Python</h5>
+            <p class="card-text text-muted">
+              Linguagem de programação principal utilizada para desenvolver toda a lógica de negócio, 
+              processamento de dados e integração com APIs externas.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body text-center p-4">
+            <div class="mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="#000000" class="bi bi-server" viewBox="0 0 16 16">
+                <path d="M1.333 2.667C1.333 1.194 4.318 0 8 0s6.667 1.194 6.667 2.667V4c0 1.473-2.985 2.667-6.667 2.667S1.333 5.473 1.333 4z"/>
+                <path d="M1.333 6.334v3C1.333 10.805 4.318 12 8 12s6.667-1.194 6.667-2.667V6.334a6.5 6.5 0 0 1-1.458.79 11.95 11.95 0 0 0-5.209.77 11.95 11.95 0 0 0-5.209-.77 6.5 6.5 0 0 1-1.458-.79"/>
+                <path d="M14.667 11.668a6.5 6.5 0 0 1-1.458.789 11.95 11.95 0 0 0-5.209.77 11.95 11.95 0 0 0-5.209-.77 6.5 6.5 0 0 1-1.458-.79v1.666C1.333 14.806 4.318 16 8 16s6.667-1.194 6.667-2.667z"/>
+              </svg>
+            </div>
+            <h5 class="card-title text-primary">Flask</h5>
+            <p class="card-text text-muted">
+              Framework web minimalista e flexível do Python usado para criar a API RESTful, 
+              gerenciar rotas, requisições HTTP e renderização de templates.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body text-center p-4">
+            <div class="mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="#563d7c" class="bi bi-box-seam" viewBox="0 0 16 16">
+                <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 .114 0l7.129 2.852A.5.5 0 0 1 15 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+              </svg>
+            </div>
+            <h5 class="card-title text-primary">API RESTful</h5>
+            <p class="card-text text-muted">
+              Arquitetura de API REST desenvolvida para fornecer endpoints estruturados que permitem 
+              consulta, busca e manipulação de dados sobre filmes e séries de forma eficiente.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Funcionalidades -->
+<div class="row py-5 mb-4">
+  <div class="col-lg-10 offset-lg-1">
+    <h3 class="text-center mb-5">Funcionalidades Principais</h3>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="d-flex">
+          <div class="flex-shrink-0">
+            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+              </svg>
+            </div>
+          </div>
+          <div class="flex-grow-1 ms-3">
+            <h5 class="mb-2">Busca e Catálogo</h5>
+            <p class="text-muted mb-0">
+              Sistema completo de busca por título, gênero, ano de lançamento e elenco. 
+              Catálogo organizado com informações detalhadas sobre cada produção.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex">
+          <div class="flex-shrink-0">
+            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+            </div>
+          </div>
+          <div class="flex-grow-1 ms-3">
+            <h5 class="mb-2">Avaliações e Comentários</h5>
+            <p class="text-muted mb-0">
+              Sistema de avaliação por estrelas e comentários dos usuários, permitindo 
+              compartilhar opiniões e descobrir novos títulos baseado em recomendações da comunidade.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex">
+          <div class="flex-shrink-0">
+            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
+              </svg>
+            </div>
+          </div>
+          <div class="flex-grow-1 ms-3">
+            <h5 class="mb-2">API RESTful</h5>
+            <p class="text-muted mb-0">
+              Endpoints estruturados seguindo padrões REST para integração com outras aplicações, 
+              permitindo acesso programático aos dados de filmes e séries.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex">
+          <div class="flex-shrink-0">
+            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-layout-text-window" viewBox="0 0 16 16">
+                <path d="M3 6.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1z"/>
+                <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v1H1V2a1 1 0 0 1 1-1zm1 3v10a1 1 0 0 1-1 1h-2V4zm-3 0v11H3V4z"/>
+              </svg>
+            </div>
+          </div>
+          <div class="flex-grow-1 ms-3">
+            <h5 class="mb-2">Interface Responsiva</h5>
+            <p class="text-muted mb-0">
+              Design moderno e responsivo utilizando Bootstrap, garantindo uma experiência 
+              otimizada em diferentes dispositivos e tamanhos de tela.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Estrutura da API -->
+<div class="row py-5 bg-light rounded mb-4">
+  <div class="col-lg-10 offset-lg-1">
+    <h3 class="text-center mb-5">Estrutura da API</h3>
+    <div class="card border-0 shadow-sm mb-4">
+      <div class="card-body p-4">
+        <h5 class="text-primary mb-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-diagram-3 me-2" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V6H8.5a1.5 1.5 0 0 1-1.5-1.5zm-3 8A1.5 1.5 0 0 1 5.5 10h1A1.5 1.5 0 0 1 8 11.5v1A1.5 1.5 0 0 1 6.5 14h-1A1.5 1.5 0 0 1 4 12.5zm0 1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm9-1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+            <path d="M11.5 6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-1-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-7 8a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+          Arquitetura
+        </h5>
+        <p class="mb-0">
+          A API foi desenvolvida seguindo os princípios REST, utilizando Flask para criar endpoints que processam requisições HTTP 
+          (GET, POST, PUT, DELETE) e retornam dados em formato JSON. A arquitetura modular permite fácil manutenção e expansão 
+          de funcionalidades.
+        </p>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body p-4">
+            <h6 class="text-primary mb-3">Endpoints Principais</h6>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <code class="text-primary">GET /api/filmes</code> - Lista todos os filmes
+              </li>
+              <li class="mb-2">
+                <code class="text-primary">GET /api/filmes/{id}</code> - Detalhes de um filme específico
+              </li>
+              <li class="mb-2">
+                <code class="text-primary">GET /api/filmes/populares</code> - Filmes mais populares
+              </li>
+              <li class="mb-2">
+                <code class="text-primary">GET /api/series</code> - Lista todas as séries
+              </li>
+              <li class="mb-2">
+                <code class="text-primary">POST /api/avaliacoes</code> - Criar nova avaliação
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body p-4">
+            <h6 class="text-primary mb-3">Tecnologias Complementares</h6>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <strong>Bootstrap 5</strong> - Framework CSS para interface responsiva
+              </li>
+              <li class="mb-2">
+                <strong>Jinja2</strong> - Engine de templates do Flask
+              </li>
+              <li class="mb-2">
+                <strong>JSON</strong> - Formato de dados para comunicação API
+              </li>
+              <li class="mb-2">
+                <strong>Blueprint</strong> - Organização modular de rotas no Flask
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Call to Action -->
+<div class="row py-5 mb-4">
+  <div class="col-lg-8 offset-lg-2 text-center">
+    <h3 class="mb-4">Explore o Projeto</h3>
+    <p class="lead text-muted mb-4">
+      Confira o código-fonte, documentação da API e contribua com o desenvolvimento do projeto.
+    </p>
+    <div class="d-flex gap-3 justify-content-center flex-wrap">
+      <a href="/" class="btn btn-primary btn-lg px-4">Voltar para Home</a>
+      <a href="#" class="btn btn-outline-primary btn-lg px-4">Ver Documentação</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

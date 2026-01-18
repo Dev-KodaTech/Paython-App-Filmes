@@ -1,0 +1,42 @@
+<!-- Header -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fs-5 border-bottom border-primary shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="/"><b>APPFIL</b></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/projeto">Projeto</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Filmes
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{{ url_for('filmes.filmes_categoria', categoria='populares') }}">Populares</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('filmes.filmes_categoria', categoria='em-cartaz') }}">Em cartaz</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="{{ url_for('filmes.filmes_categoria', categoria='mais-bem-avaliados') }}">Mais bem avaliados</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Series
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{{ url_for('filmes.filmes_categoria', categoria='series-populares') }}">Populares</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('filmes.filmes_categoria', categoria='series-em-exibicao') }}">Em exibição</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="{{ url_for('filmes.filmes_categoria', categoria='series-na-tv') }}">Na TV</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

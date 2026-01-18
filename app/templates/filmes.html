@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Filmes{% endblock %}
+
+{% block content %}
+<div class="row p-5">
+  <h1 class="pb-3 text-primary">{{ categoria.capitalize() | replace('-', ' ') }}</h1>
+    {% for filme in filmes %}
+    <div class="col-sm-3 mb-3 mb-sm-0 pb-3">
+      <div class="card">
+          <div class="card-body">
+            <img src="https://image.tmdb.org/t/p/w500{{ filme.poster_path }}" class="card-img-top" alt="{{ filme.title }}">
+            <div class="card-body">
+              <h5 class="card-title">{{ filme.title }}</h5>
+              <p class="card-text">{{ filme.overview[:100] }}...</p>
+              <hr>
+              <h4 class="text-center">
+                Nota Média:
+                <span class="badge bg-primary">
+                  {{ filme.vote_average }}
+                </span>
+              </h4>
+              <p class="text-center">
+                <span class="text-muted small mb-2">
+                  Data de Lançamento:
+                  {{ filme.release_date if filme.release_date else filme.first_air_date }}
+                </span>
+              </p>
+            </div>
+          </div>
+      </div>
+    </div>
+    {% endfor %}
+
+</div>
+{% endblock %}
