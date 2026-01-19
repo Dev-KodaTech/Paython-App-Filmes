@@ -33,9 +33,3 @@ README.md
 
 pyvenv.cfg
 **/pyvenv.cfg
-
-# Except for the ones we want to version
-!**/.gitignore
-!**/.env.example
-!**/.env
-!**/.env.example
