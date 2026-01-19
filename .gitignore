@@ -20,3 +20,20 @@ pyvenv.cfg
 .vscode/
 .idea/
 
+/Include
+**/Include
+/Lib
+**/Lib
+/Scripts
+**/Scripts
+README.md
+**/README.md
+
+pyvenv.cfg
+**/pyvenv.cfg
+
+# Except for the ones we want to version
+!**/.gitignore
+!**/.env.example
+!**/.env
+!**/.env.example
